@@ -1,0 +1,17 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@import "./css/variables.scss";
+body {
+    max-width: 100%;
+    margin: 0 auto;
+}
+// /* Позиционирование секций сайта с помощью внутренних отступов */
+.section-1, .section-2, .section-3, .section-4, .section-5 {
+    padding: 16px;
+}
+@import "header.scss";
+@import "main.scss";
+@import "footer.scss";

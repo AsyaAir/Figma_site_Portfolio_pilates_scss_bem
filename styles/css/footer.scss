@@ -1,0 +1,49 @@
+/* 3. Footer сайта со ссылками на соц.сети */
+.section_5 {
+    display: grid;
+    padding: 10px;
+    border: 1px solid black;
+    margin-bottom: 60px;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: fit-content(1fr) 1fr;
+    grid-gap: 5px;
+    outline: 2px #8643dc;
+    align-content: space-evenly;
+  }
+  .s_5 {
+    grid-area: 1/1/2/4;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .mini_pic_4 {
+    grid-area: 2/1/3/2;
+    display: flex;
+    align-items:flex-end;
+    flex-direction: column;
+  }
+  .mini_pic_5 {
+    grid-area: 2/2/3/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .mini_pic_6 {
+    grid-area: 2/3/3/4;
+    display: flex;
+    align-items:flex-start;
+    flex-direction: column;
+  }
+    /* background: linear-gradient(
+        to left,
+        rgba(187, 133, 255, 0.7) 70%,
+        rgba(255, 177, 222, 0.7) 70%,
+    ); */
+  /* 
+  @media screen and (min-width:375px){
+  .photo_on_background {
+    grid-area: 3/1/4/3;
+    /* height: 25vh; 
+  }
+  } */

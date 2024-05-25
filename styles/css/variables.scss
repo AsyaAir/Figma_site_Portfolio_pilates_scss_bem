@@ -1,0 +1,32 @@
+// Переменные для шрифтов и цветов 
+$font-family: "Red Hat Display", sans-serif;
+$second-family: "Roboto", sans-serif;
+$third-family: "Montserrat", sans-serif;
+$main-color: #8643dc;
+$second-color: #25202f;
+$third-color: #47444e;
+// Общие параметры 
+
+// Исходя из версии сайта для desktop, медиазапросы для tablet и phone
+$tablet-size: 768px;
+$phone-size: 425px;
+
+// /* Переменные для шрифтов и цветов */
+// :root {
+//     --font-family: "Red Hat Display", sans-serif;
+//     --second-family: "Roboto", sans-serif;
+//     --third-family: "Montserrat", sans-serif;
+//     --main-color: #8643dc;
+//     --second-color: #25202f;
+//     --third-color: #47444e;
+// }
+// /* Общие параметры */
+// body {
+//     max-width: 100%;
+//     margin: 0 auto;
+//     /* padding: 16px; убираем*/
+// }
+//   /* Позиционирование секций сайта с помощью внутренних отступов */
+// header, .section_2, .section_3, .section_4, footer {
+//     padding: 16px;
+// }

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Подключение google шрифтов по макету в Figma-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Подключение CSS файла стилей -->
+    <!-- <link rel="stylesheet" href="./styles/index.css"> -->
+    <link rel="stylesheet" href="styles/css/index.css" />
+</head>
+<!-- Блок page -->
+<body class="page">
+    <!-- 1. Блок "Шапка сайта - Секция 1": блоки "лого", "навигация", "фото", "приветсивие", "коммуникация" -->
+    <!-- Вложенный блок section-1 -->
+    <header class="section-1">
+    <!-- "section_1" -->
+
+            <!-- Вложенный блок section-1-column-1 -->
+            <div class="section-1-column-1">
+            <!-- "column_1_section_1" -->
+                <!-- 1.1. Логотип: вставка текста (буква G от имени Glenda) поверх картинки. -->
+                <!-- Вложеннный блок logo -->
+                <div class="logo">
+                <!-- "text_G" -->
+                    <!-- Элемент text блока logo -->
+                    <p class="logo__text">G</p>
+                    <!-- "text_G_over" -->
+                </div>
+                <!--1.2. Навигация-главное меню  -->
+                <!-- Вложеннный блок menu -->
+                <nav class="menu">
+                <!-- "main_menu" -->
+                    <!-- Элемент link с модификатором about блока menu -->
+                    <a class="menu__link menu__link_about" href="#" class="nav_link">About</a>
+                    <!-- Элемент link с модификатором classes блока menu -->
+                    <a class="menu__link menu__link_classes" href="#" class="nav_link">Classes</a>
+                    <!-- Элемент link с модификатором education блока menu -->
+                    <a class="menu__link menu__link_education" href="#" class="nav_link">Education</a>
+                    <!-- Элемент link с модификатором contacts блока menu -->
+                    <a class="menu__link menu__link_contacts" href="#" class="nav_link">Contacts</a>
+                </nav>
+                <!-- 1.3. Приветствие с кнопкой коммуникации Let's talk-->
+                <!-- Вложенный блок greeting -->
+                <div class="greetings_area">
+                <!-- "greetings_area" -->
+                    <!-- Элемент heading блока greeting -->
+                    <p class="greeting__heading">Hello,</p>
+                    <!-- "hello" -->
+                    <!-- Элемент name блока greeting -->
+                    <h1 class="greeting__name">Glenda Rorick</h1>
+                    <!-- Элемент activity блока greeting -->
+                    <p class="greeting__activity">a freelance pilates trainer</p>
+                    <!-- "profession" -->
+                    <!-- Элемент button с модификатором let-s-talk блока greeting -->
+                    <button class="greetings__button greetings__button_let-s-talk">Let's talk</button>
+                    <!-- "talk" -->
+                </div>
+            </div>
+
+            <!-- Вложенный блок section-1-column-2 -->
+            <div class="section-1-column-2">
+            <!-- "column_2_section_1" -->
+                <!-- Вложенный блок photo -->
+                <div class="photo">
+                <!-- "photo_on_background" -->
+                    
+                <!-- <div class="photo_on_background">
+                <img src="./assets/photo_Glenda.png" alt="Glenda Rorick" style="width: 80%;" class="photo">
+                </div> -->
+
+                </div>
+                
+            </div>
+            
+            <!-- Вложенный блок section-1-column-3 -->
+            <div class="section-1-column-3">
+            <!-- "column_3_section_1" -->
+
+                <!-- 1.5. Бургер меню -->
+                <!-- Взято здесь: https://www.mobila.name/post/53eb5a219dcff -->
+                <!-- Вложенный блок burger-menu -->
+                <div class="burger-menu">
+                <!-- "burger_menu" -->
+                    
+                    <!-- Скрытый checkbox, отвечающий за переключение панели, должен быть в верхней части документа, лучше сразу после тега `<body>`
+                    `id` атрибут предназначен для связки с атрибутом `for` тега <label>
+                    Атрибут `hidden` указывает состояние «скрытый» у текущего элемента-->
+                    <!-- Вложенный блок hidden-checkbox -->
+                    <input class="hidden-checkbox" type="checkbox" id="nav-toggle" hidden>
+                    <!-- Выдвижную панель размещаете ниже флажка (checkbox), но не обязательно непосредственно после него, например
+                    можно и в конце страницы-->
+                    <!-- Вложенный блок burger-menu-nav -->
+                    <nav class="burger-menu-nav">
+                    <!-- "nav" -->
+                        <!-- Метка с именем `id` чекбокса в `for` атрибуте Символ Unicode 'TRIGRAM FOR HEAVEN' (U+2630)
+                        Пустой атрибут `onclick` используем для исправления бага в iOS < 6.0
+                        См: http://timpietrusky.com/advanced-checkbox-hack -->
+                        <!-- Вложенный блок nav-toggle -->
+                        <label for="nav-toggle" class="nav-toggle" onclick></label>
+                        <!-- Здесь размещаете любую разметку, если это меню, то скорее всего неупорядоченный список <ul>-->
+                            <!-- Внутренний блок nav-list -->
+                            <ul class="nav-list">
+                            <!-- Элемент link с модификатором about блока nav-list -->
+                            <a href="#1" class="nav-list__link nav-list__link_about">About</a>
+                            <!-- Элемент link с модификатором classes блока nav-list -->
+                            <a href="#2" class="nav-list__link nav-list__link_classes">Classes</a>
+                            <!-- Элемент link с модификатором education блока nav-list -->
+                            <a href="#3" class="nav-list__link nav-list__link_education">Education</a>
+                            <!-- Элемент link с модификатором contacts блока nav-list -->
+                            <a href="#4" class="nav-list__link nav-list__link_contacts">Contacts</a>
+                            <!-- Элемент link с модификатором home блока nav-list -->
+                            <a href="#5" class="nav-list__link nav-list__link_home">Home</a>
+                        </ul>
+                    </nav>
+        <!-- Маска (затемнение) основного контента при включенной панели по-умолчанию данная фишка не используется, если оно вам надо,
+            просто расккоментируйте div-контейнер ниже
+        <div class="mask-content"></div>-->
+        <!-- Далее размещаем любую разметку, много слов, картинки и т.д...-->
+                </div>
+            </div>
+            
+    </header>  
+    <!-- 2. Основной контент сайта -->
+    <!-- Вложенный блок main -->
+    <main class="main">
+
+        <!-- 2.1. Секция сайта Classes -->
+        <!-- Вложенный блок section-2 -->
+        <section class="section-2">
+        <!-- "section_2" -->
+
+            <!-- Вложенный блок title -->
+            <div class="title">
+                <!-- Элемент headline блока title -->
+                <h4 class="title__headline">Classes</h4>
+                <!-- Элемент strip блока title -->
+                <hr class="title__strip">
+                <!-- Элемент caption блока title -->
+                <h2 class="title__caption">What actually I love to do</h2>
+            </div>
+            
+            <!-- Вложенный блок articles -->
+            <div class="articles">
+
+                <!-- Вложенный блок section-2-column-1 -->
+                <div class="section-2-column-1">
+                    <!-- Элемент icon блока section-2-column-1 -->
+                    <img src="./assets/Background_mini.svg" alt="mini" class="section-2-column-1__icon">
+                    <!-- "mini_pic_1" -->
+                    <!-- Элемент subtitle блока section-2-column-1 -->
+                    <h3 class="section-2-column-1__subtitle">Private classes</h3>
+                    <!-- "classes_1" -->
+                    <!-- Элемент suject блока section-2-column-1 -->
+                    <p class="section-2-column-1__suject">If you are looking to accelerate your health and well-being, the 1:1 classes are the fastest way to get results. With individual sessions, we can exercise at your level and progress the difficulty as you improve. Private sessions also allow you to develop a rapport with me so I will know when you are having a good day and be pushed a bit further and gain an understanding of what motivates you helping you to gain the best results. </p>
+                    <!-- article "classes_1_article" -->
+                </div>
+
+
+                <!-- Вложенный блок section-2-column-2 -->
+                <div class="section-2-column-2">
+                    <!-- Элемент icon блока section-2-column-2 -->
+                    <img src="./assets/Background_mini.svg" alt="mini" class="section-2-column-2__icon">
+                    <!-- "mini_pic_2" -->
+                    <!-- Элемент subtitle блока section-2-column-2 -->
+                    <h3 class="section-2-column-2__subtitle">Group classes</h3>
+                    <!-- "classes_2" -->
+                    <!-- Элемент suject блока section-2-column-2 -->
+                    <p class="section-2-column-2__suject">Private Pilates session with me for three people. The session is guided by the group's wellness goals. The session includes a mix of reformer, tower, barrel equipment, and/or small props.</p>
+                    <!-- "classes_2_article" -->
+                </div>
+
+                <!-- Вложенный блок section-2-column-3 -->
+                <div class="section-2-column-3">
+                    <!-- Элемент icon блока section-2-column-3 -->
+                    <img src="./assets/Background_mini.svg" alt="mini" class="section-2-column-3__icon">
+                    <!-- "mini_pic_3" -->
+                    <!-- Элемент subtitle блока section-2-column-3 -->
+                    <h3 class="section-2-column-3__subtitle">Public classes</h3>
+                    <!-- "classes_3" -->
+                    <!-- Элемент suject блока section-2-column-3 -->
+                    <p class="section-2-column-3__suject">Mixed Level Pilates classes in Trumbull Physical Therapy and Welness Ceter. We are a synergistic group of independent practitioners whose mission is to provide individualized healing in a supportive environment. </p>
+                    <!-- "classes_3_article" -->
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 2.2. Секция сайта About me -->
+        <!-- Вложенный блок section-3 -->
+        <section class="section-3">
+        <!-- "section_3" -->
+
+            <!-- Вложенный блок title -->
+            <div class="title">
+                <!-- Элемент headline блока title -->
+                <h4 class="title__headline">About Me</h4>
+                <!-- Элемент strip блока title -->
+                <hr class="title__strip">
+                <!-- Элемент caption блока title -->
+                <h2 class="title__caption">Big deal with</h2>
+            </div>
+
+            <!-- Вложенный блок articles -->
+            <div class="articles">
+
+                <!-- Вложенный блок section-3-column-1 -->
+                <div class="section-3-column-1">
+                    <!-- Элемент icon блока section-3-column-1 -->
+                    <img src="./assets/Background_mini.svg" alt="mini" class="section-3-column-1__icon">
+                    <!-- "mini_pic_1" -->
+                    <!-- Элемент subtitle блока section-3-column-1 -->
+                    <h3 class="section-2-column-1__subtitle">Work skills</h3>
+                    <!-- "classes_1" -->
+                    <!-- Элемент suject блока section-3-column-1 -->
+                    <ul class="section-3-column-1__suject">
+                    <!-- "about_me_1_article" -->
+                        <li>Pilates Mat & Reformer Techniques</li>
+                        <li>Exercise Program Development</li>
+                        <li>Anatomy and Physiology Knowledge</li>
+                        <li>Client Fitness Assessments</li>
+                        <li>Group Class Instruction</li>
+                        <li>Customer Relationship Management</li>
+                    </ul>
+                </div>
+
+                <!-- Вложенный блок section-3-column-2 -->
+                <div class="section-3-column-2">
+                    <!-- Элемент icon блока section-3-column-2 -->
+                    <img src="./assets/Background_mini.svg" alt="mini" class="section-3-column-2__icon">
+                    <!-- "mini_pic_2" -->
+                    <!-- Элемент subtitle блока section-3-column-2 -->
+                    <h3 class="section-3-column-2__subtitle">Work experience</h3>
+                    <!-- "classes_2" -->
+                    <!-- Элемент suject блока section-3-column-2 -->
+                    <ul class="section-3-column-2__suject">
+                        <!-- "classes_2_article" -->
+                        <li>Fitness Centers & Gyms</li>
+                        <li>Pilates Studios</li>
+                        <li>Physical Therapy Clinics</li>
+                        <li>Community Centers</li>
+                        <li>Online Coaching Platforms</li>
+                        <li>Private In-Home Sessions</li>
+                    </ul>
+                </div>
+
+                <!-- Вложенный блок section-3-column-3 -->
+                <div class="section-3-column-3">
+                    <!-- Элемент icon блока section-3-column-3 -->
+                    <img src="./assets/Background_mini.svg" alt="mini" class="section-2-column-3__icon">
+                    <!-- "mini_pic_3" -->
+                    <!-- Элемент subtitle блока section-3-column-3 -->
+                    <h3 class="section-3-column-3__subtitle">Education</h3>
+                    <!-- "classes_3" -->
+                    <!-- Элемент suject блока section-3-column-3 -->
+                    <ul class="section-3-column-3__suject">
+                    <!-- "about_me_3_article_suject" -->
+                        <li> Certificat of National Pilates Program (NPCP)</li>
+                        <li>Pilates Method Alliance (PMA) Certificat</li>
+                        <li>Physical Therapy Clinics</li>
+                        <li>Certificat of Pilates Method Alliance (PMA) </li>
+                        <li>Certificat of Balanced Body Comprehensive</li>
+                        <li>Certificat of STOTT Pilates</li>
+                        <li>Certificat of Peak Pilates Comprehensive</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </section>
+
+    <!-- 2.3. Секция сайта Contact Me -->
+    <!-- Вложенный блок section-4 -->
+    <section class="section-4">
+    <!-- "section_4" -->
+
+        <!-- Вложенный блок section-4-column-1 -->
+        <div class="section-4-column-1">
+            
+            <!-- Вложенный блок title -->
+            <div class="title">
+                <!-- Элемент headline блока title -->
+                <h4 class="title__headline">Contact Me</h4>
+                <!-- "p_nav" -->
+                <!-- Элемент strip блока title -->
+                <hr class="title__strip">
+                <!-- Элемент caption блока title -->
+                <h3 class="title__caption">Let me know if you want to talk about a potential collaboration or to be my client. 
+                    I'm available for freelance work.</h3>
+                <!-- "s_4" -->
+            </div>
+
+            <!-- Вложенный блок form-name -->
+            <form method="post" class="form-name">
+                <!-- Элемент lable с модификатором name блока form-name -->
+                <p class="form-name__lable form-name__lable_name"><label for="name">What’s your name?</label>
+                <!-- Элемент strip блока form-name -->
+                <hr class="form-name__strip">
+                <!-- Элемент input с модификатором name блока form-name -->
+                <input type="text" id="name" name="name" class="form-name__input form-name__input_name" required></p>
+                <!-- "input" -->
+            </form>
+
+            <!-- Вложенный блок form-email -->
+            <form method="post" class="email">
+                <!-- Элемент lable с модификатором email блока form-email -->
+                <p class="form-email__lable form-email__lable_email"><label for="email">Your email</label>
+                <!-- Элемент strip блока form-email -->
+                <hr class="form-email__strip">
+                <!-- Элемент input с модификатором email блока form-email -->
+                <input type="email" id="email" name="email" class="form-email__input form-email__input_email" required></p>
+                <!-- "input" -->
+            </form>
+
+            <!-- Вложенный блок form-tasks -->
+            <form method="post" class="form-tasks">
+            <!-- "tasks" -->
+                <!-- Элемент lable с модификатором tasks блока form-tasks -->
+                <p class="form-tasks__lable form-tasks__lable_tasks"><label for="tasks">Tell me about your tasks</label>
+                <!-- Элемент strip блока form-tasks -->
+                <hr class="form-tasks__strip">
+                <!-- Элемент input с модификатором tasks блока form-tasks -->
+                <input type="text" id="tasks" name="tasks" class="form-tasks__input form-tasks__input_tasks" required></p>
+                <!-- "input" -->
+                
+                <!-- Элемент button с модификатором send блока form-tasks -->
+                <button class="form-tasks__button form-tasks__button_send">Send</button>
+                <!-- "send" -->
+
+            </form> 
+
+        </div>
+
+        <!-- Вложенный блок section-4-column-2 -->
+        <div class="section-4-column-2">
+            <!-- Элемент  -->
+            <a href="mailto:glendabrorick@gmail.com" class="mail">glendabrorick@gmail.com</a>
+        </div>
+
+    </section>
+    </main>
+
+    <!-- 3. Footer сайта со ссылками на соц.сети -->
+    <!-- Вложенный блок footer -->
+    <footer class="footer">
+
+        <!-- Вложенный блок section-5 -->
+        <div class="section_5">
+        <!-- "section_5" -->
+
+            <!-- Вложенный блок socials -->
+            <div class="socials">
+                <!-- Элемент caption блока socials-->
+                <h3 class="socials__caption">Let’s be Friends</h3>
+                <!-- "s_5" -->
+                <!-- Вложенный блок links -->
+                <div class="links">
+                    <!-- Элемент socials с модификатором fb блока links -->
+                    <img src="./assets/Background_mini.svg" alt="facebook" class="links__socials links__socials_fb">
+                    <!-- "mini_pic_4" -->
+                    <!-- Элемент socials с модификатором insta блока links -->
+                    <img src="./assets/Background_mini.svg" alt="insagram" class="links__socials links__socials_insta">
+                    <!-- "mini_pic_5" -->
+                    <!-- Элемент socials с модификатором linkedin блока links -->
+                    <img src="./assets/Background_mini.svg" alt="linkedin" class="links__socials links__socials_linkedin">
+                    <!-- "mini_pic_6" -->
+                </div>
+            </div>
+            
+        </div>
+    </footer>
+</body>
+</html>
