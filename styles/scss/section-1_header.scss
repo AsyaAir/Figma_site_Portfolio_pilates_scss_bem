@@ -1,4 +1,4 @@
-/*1. Шапка сайта: лого, навигация, фото, приветствие, коммуникация*/
+// 1. Шапка сайта: лого, навигация, фото, приветствие, коммуникация
 .section-1 {
     /* background-color: blueviolet; */
     width: 100%;
@@ -38,7 +38,7 @@
 /* 1.1. Логотип: вставка текста (буква G от имени Glenda) поверх картинки. */
 //   Вложеннный блок logo
 .logo {
-    /* grid-area: 1/1/2/2; */
+    grid-area: 1/1/2/2; 
 }
 
 // Элемент text блока logo
@@ -56,7 +56,7 @@
     max-width: 100%; /* адаптивный дизайн: картинка привязана к размеру родителя */
     height: 100%;
     color: #fff;
-    font-family: $third-family;
+    // font-family: $third-family;
     padding: 3px;
     font-weight: 700;
     font-size: 30px;
@@ -178,6 +178,7 @@
     background-size: auto, cover; /* Меняем масштаб */  
   }
   .photo {
+    grid-area: 1/1/2/2;
   }
   /* .text_G {
     grid-area: 1/1/2/2;
@@ -297,4 +298,6 @@
   [id='nav-toggle']:checked ~ .nav > .nav-toggle:after {
     content: '\2715';
   }
-  .column_3_section_1 {}
+  .column_3_section_1 {
+    display: inline;
+  }

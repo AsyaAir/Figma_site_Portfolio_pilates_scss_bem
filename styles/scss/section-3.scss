@@ -1,0 +1,39 @@
+ /* 2.2. Секция сайта About me */
+ .section_3 {
+    display: grid;
+    border: 1px solid black;
+    margin-bottom: 60px;
+    grid-template-columns: 5% 1fr 5% 1fr 5% 1fr;
+    grid-template-rows: 15% 15% 15% fit-content(1fr);
+    grid-gap: 5px;
+    outline: 2px #8643dc;
+    align-content: space-evenly;
+  }
+  ::marker {
+    color: var(--third-color);
+    font-size: 1em;
+  }
+  .about_me_1_article {
+    grid-area: 4/1/5/3;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 200%;
+    color: var(--third-color);    
+  }
+  .about_me_2_article {
+    grid-area: 4/3/5/5;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 200%;
+    color: var(--third-color);
+  }
+  .about_me_3_article {
+    grid-area: 4/5/5/7;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 200%;
+    color: var(--third-color);
+  }
