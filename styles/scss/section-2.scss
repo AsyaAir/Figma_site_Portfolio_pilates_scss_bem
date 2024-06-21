@@ -7,6 +7,12 @@
 .title {
     padding-bottom: 40px;
 }
+.title__strip {
+    width: 70px;
+    color: $main-color;
+    background-color: $main-color;
+    height: 3px;
+}
 .articles {
     display: flex;
     justify-content: space-between;
@@ -17,6 +23,10 @@
     max-width: 350px;
     display: flex;
     flex-direction: column;
+}
+.column-3 {
+    display: flex;
+    flex-direction: column; 
 }
 .title-container {
     display: flex;
@@ -29,8 +39,8 @@
     min-height: 65px;
     display: flex;
     justify-content: center;
-    background: url(../../assets/Background_mini.svg);
-    background-repeat: no-repeat;
+    background: url(../../assets/Background_mini.svg) no-repeat fixed;
+    background-size: auto;
 }
 .picture-container__icon {
     display: block;
